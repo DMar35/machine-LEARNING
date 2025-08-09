@@ -74,10 +74,10 @@ do this, we perform the following steps:
 4.  Update params:
 
     - For bias term:
-      $\displaystyle \theta_0 := \theta_0 - \alpha \cdot \text{bias\_gradient}$
+      $$\displaystyle \theta_0 := \theta_0 - \alpha \cdot \text{bias\_gradient}$$
 
     - For features:
-      $\displaystyle \theta_i := \theta_i - \alpha \cdot \text{weight\_gradient}$
+      $$\displaystyle \theta_i := \theta_i - \alpha \cdot \text{weight\_gradient}$$
 
 5.  Repeat steps 1-4 until local optima is found(only global minimum for
     linear regression)
@@ -98,7 +98,7 @@ rate($\alpha$) of 0.1
     - Bias gradient = $h_\theta(x^{(i)}) - y^{(i)} = -4 + 0 = -4$
 
     - Weight gradient =
-      $h_\theta(x^{(i)}) - y^{(i)} = (-4 + 0) \cdot 2 = -8$
+      $$h_\theta(x^{(i)}) - y^{(i)} = (-4 + 0) \cdot 2 = -8$$
 
 4.  Update params:
 
@@ -188,3 +188,4 @@ rate($\alpha$) of 0.1
 
 - Using **model.eval()** and **torch.no_grad()** to optimize for
   predictions and model evaluation once training is finished.
+
