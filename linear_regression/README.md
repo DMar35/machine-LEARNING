@@ -1,4 +1,4 @@
-#Linear Regression: What I Learned
+# Linear Regression: What I Learned
 
 # Theory
 
@@ -190,6 +190,7 @@ rate($\alpha$) of 0.1
 
 - Using **model.eval()** and **torch.no_grad()** to optimize for
   predictions and model evaluation once training is finished.
+
 
 
 
