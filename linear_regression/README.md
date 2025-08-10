@@ -7,9 +7,7 @@
 - Linear regression is a form of supervised learning that maps a given
   $x$ to an output $y$ where $y$ can be any value. The hypothesis for
   linear regression is defined as follows:
-  $$
-  h_{\theta}(x) = \theta_0 + {\theta_1}{x_1} + {\theta_2}{x_2} + \dots {\theta_n}x_n
-  $$
+  $$h_{\theta}(x) = \theta_0 + {\theta_1}{x_1} + {\theta_2}{x_2} + \dots {\theta_n}x_n$$
 
 - The goal is find the parameters $\theta$ such that they minimize the
   cost function $J(\theta)$. In the case of linear regression this is
@@ -192,6 +190,7 @@ rate($\alpha$) of 0.1
 
 - Using **model.eval()** and **torch.no_grad()** to optimize for
   predictions and model evaluation once training is finished.
+
 
 
 
