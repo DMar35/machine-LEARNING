@@ -1,8 +1,8 @@
 # Linear Regression: What I Learned
 
-# Theory
+## Theory
 
-## What is Linear Regression:
+### What is Linear Regression:
 
 - Linear regression is a form of supervised learning that maps a given
   $x$ to an output $y$ where $y$ can be any value. The hypothesis for
@@ -14,7 +14,7 @@
   **mean squared error** which is defined as follows:
   $$J(\theta) = \frac{1}{2m} \sum_{i=1}^m \bigl(h_\theta(x^{(i)}) - y^{(i)}\bigr)^2$$
 
-## Variable definitions:
+### Variable definitions:
 
 | Symbol             | Description                                                     |
 |:-------------------|:----------------------------------------------------------------|
@@ -27,7 +27,7 @@
 | $(x^{(i)}, y^{(i)})$| $i$-th training example                                        |
 
 
-## Gradient Descent:
+### Gradient Descent:
 
 - Gradient descent is an optimization algorithm used to iteratively
   update the model parameters/weights($\theta$) of the model in order to
@@ -39,22 +39,22 @@
 - Formal Definition:
   $$\theta_j := \theta_j - \alpha \frac{\partial J(\theta)}{\partial \theta_j}$$
 
-### Stochastic Gradient Descent:
+#### Stochastic Gradient Descent:
 
 - SGD uses one training example per pass in contrast to regular batch
   gradient descent which uses all training examples. This makes it more
   efficient and therefore better for large datasets, albeit more
   unpredictable.
 
-### Normal Equation:
+#### Normal Equation:
 
 - An equation for linear regression ONLY that finds the optimal value(s)
   of $\theta$ in one step. It uses the following formula:
   $$\theta = (X^{T}X)^{-1}X^{T}y$$
 
-## How Linear Regression Works:
+### How Linear Regression Works:
 
-### Running gradient descent
+#### Running gradient descent
 
 As stated before, the goal of linear regression is to find the
 parameters $\theta$ such that they minimize the mean squared error. To
@@ -84,7 +84,7 @@ do this, we perform the following steps:
 5.  Repeat steps 1-4 until local optima is found(only global minimum for
     linear regression)
 
-### An example loop
+#### An example loop
 
 The following is an example for one loop using a singular training
 example with one feature: ($x$ = 2, $y$ = 4) and a learning
@@ -115,9 +115,9 @@ rate($\alpha$) of 0.1
 
   <br></br>
 
-# Coding: What I learned
+## Coding: What I learned
 
-## General
+### General
 
 - How to use Sklearn to load datasets and split them into training/test
   sets.
@@ -131,7 +131,7 @@ rate($\alpha$) of 0.1
 - Learned how to tune learning rates and adjust epoch count to improve
   model accuracy.
 
-## NumPy version
+### NumPy version
 
 - How to build a linear regression model from scratch without using any
   built-in linear regression utility functions.
@@ -145,7 +145,7 @@ rate($\alpha$) of 0.1
   np.random.randn for initializing the weights vector and bias term as
   well as np.mean.
 
-## PyTorch version
+### PyTorch version
 
 - Learned how to take advantage of PyTorch's built in modules to
   automate most of the core functionality of the model structure
@@ -190,6 +190,7 @@ rate($\alpha$) of 0.1
 
 - Using **model.eval()** and **torch.no_grad()** to optimize for
   predictions and model evaluation once training is finished.
+
 
 
 
